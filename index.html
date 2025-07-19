@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portofolio Leon</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
+
   <header>
-    <h1>Leon</h1>
-    <p>Web Developer | Bot Maker | Kreator</p>
+    <div class="container">
+      <img src="assets/profile.jpg" alt="Foto Leon" class="profile-img"/>
+      <h1>Leon</h1>
+      <p>Web Developer • Bot Creator • Problem Solver</p>
+    </div>
   </header>
 
-  <section class="about">
+  <section class="about" data-aos="fade-up">
     <h2>Tentang Saya</h2>
-    <p>Saya adalah pengembang web dan pembuat bot WhatsApp. Berpengalaman dalam membangun sistem berbasis JavaScript dan membuat solusi praktis untuk kebutuhan digital.</p>
+    <p>
+      Saya adalah pengembang web dan pembuat bot WhatsApp. Fokus pada solusi otomatisasi digital, website aesthetic, dan sistem backend yang ringan dan efisien.
+    </p>
   </section>
 
-  <section class="projects">
-    <h2>Proyek Saya</h2>
-    <div class="project">
+  <section class="projects" data-aos="fade-up">
+    <h2>Proyek Unggulan</h2>
+    <div class="project-card">
       <h3>BotinAja</h3>
-      <p>Jasa pembuatan bot WhatsApp custom untuk bisnis dan roleplay.</p>
+      <p>Jasa pembuatan bot WhatsApp untuk bisnis dan komunitas. Fitur lengkap: admin, roleplay, pembayaran, dan dashboard.</p>
     </div>
-    <div class="project">
+    <div class="project-card">
       <h3>Website Sekolah</h3>
-      <p>Website sekolah dengan fitur kehadiran QR dan UI menarik.</p>
+      <p>Website modern untuk sekolah dengan sistem kehadiran QR Code dan tampilan admin interaktif.</p>
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" data-aos="fade-up">
     <h2>Hubungi Saya</h2>
     <p>Email: <a href="mailto:leon@example.com">leon@example.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/6287760550924">Chat di WhatsApp</a></p>
+    <p>WhatsApp: <a href="https://wa.me/6287760550924">Klik untuk Chat</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Leon. All rights reserved.</p>
+    <p>&copy; 2025 Leon. All rights reserved.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
