@@ -1,28 +1,73 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background: #121212;
-  color: #f0f0f0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  text-align: center;
+  padding: 3rem 1rem;
 }
 
 header {
-  background-color: #1f1f1f;
-  text-align: center;
-  padding: 2em;
+  background: linear-gradient(to bottom, #1c1c1c, #0f0f0f);
+  padding-bottom: 2rem;
 }
 
-.about, .projects, .contact {
-  padding: 2em;
+.profile-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #00ffd5;
+  box-shadow: 0 0 20px #00ffd5;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00ffd5;
+}
+
+p {
+  font-weight: 300;
+  color: #ccc;
+}
+
+section {
+  padding: 3rem 1rem;
   max-width: 800px;
   margin: auto;
 }
 
-.projects .project {
-  background: #1f1f1f;
-  padding: 1em;
-  margin: 1em 0;
+h2 {
+  font-size: 2rem;
+  color: #00ffd5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project-card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-left: 4px solid #00ffd5;
   border-radius: 8px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #00ffd5;
 }
 
 a {
@@ -30,9 +75,14 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
-  padding: 1em;
-  background: #1f1f1f;
-  margin-top: 2em;
+  padding: 1rem;
+  background: #1c1c1c;
+  color: #666;
+  font-size: 0.9rem;
 }
